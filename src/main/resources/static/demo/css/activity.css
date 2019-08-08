@@ -1,0 +1,161 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Microsoft YaHei UI";
+    font-size: 15px;
+}
+
+/*总容器*/
+.container {
+
+    width: 100%;
+}
+
+/*表单样式*/
+.activity-form {
+    width: 720px;
+    margin: 0 auto;
+    padding: 20px;
+}
+/*输入框、选择框样式*/
+.activity-form input, .activity-form .activity-area {
+    height: 35px;
+    width: 400px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+/*输入框、选择框样式*/
+.activity-form input[type='text'],.activity-form input[type='number'],.activity-form textarea{
+    padding: 5px;
+}
+    /*
+    titile
+     */
+.activity-form .form-title {
+    text-align: center;
+    font-size: 30px;
+}
+
+/*表单下各模块样式*/
+.activity-form .item {
+    margin: 15px 15px  15px 100px ;
+    float: left;
+}
+
+.activity-form .add-activity-shape {
+    float: left;
+}
+
+/*按钮总体样式*/
+.activity-form button {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    font-size: 15px;
+}
+
+/*标签样式，如“活动名称”*/
+.activity-form .item .label {
+    margin: auto 5px;
+    float: left;
+    height: 35px;
+    line-height: 35px;
+    display: inline-block;
+    width: 70px;
+}
+
+/*  *号样式*/
+.activity-form .item .required {
+    color: #ff0000;
+    float: left;
+    height: 35px;
+    line-height: 35px;
+    width: 5px;
+}
+
+
+/*选择容器，里面包含选项*/
+.activity-form .item .selectContain {
+    float: left;
+    width: 400px;
+}
+
+/*选择input的类型样式*/
+.activity-form .selectContain .activity-select {
+    width: 15px;
+    height: 35px;
+    line-height: 35px;
+    float: left;
+    margin-right: 10px;
+}
+
+/*复选或单选的项目样式*/
+.activity-form .selectContain .activity-select-name {
+    height: 35px;
+    line-height: 35px;
+    float: left;
+}
+
+/**/
+.activity-form .selectContain > div {
+    width: 200px;
+    float: left;
+}
+
+
+/*立即创建按钮样式*/
+.activity-form .item #createBtn {
+    margin-left: 80px;
+    margin-right: 20px;
+    background-color: #6495cd;
+    border: none;
+    color: #fff;
+}
+
+/*重置按钮样式*/
+.activity-form .item #resetBtn {
+    margin-right: 20px;
+}
+
+/*提示样式*/
+.activity-form .item .warnTip {
+    color: #f00;
+    margin-left: 5px;
+    font-size: 13px;
+    display: none;
+}
+
+/* 活动形式输入 容器*/
+.activity-form .item .activity-shape-contain {
+    float: left;
+}
+
+/*活动形式 单块 包含输入框和删除键*/
+.activity-form .item .activity-shape-item {
+    height: 70px;
+}
+
+/*活动形式框删除 图标样式*/
+.activity-shape-item .remove-desc{
+    width: 20px;
+    height: 100%;
+    color: #f00;
+    margin: 5px;
+    margin-top: -10px;
+    cursor: pointer;
+    vertical-align: top;
+    display: none;
+}
+
+.activity-form .activity-shape-item textarea {
+    width: 400px;
+    min-height: 60px;
+    max-width: 400px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    float: left;
+}
+
+.activity-form .add-activity-shape .label {
+    padding-left: 5px;
+}

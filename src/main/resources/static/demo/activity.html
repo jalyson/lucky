@@ -1,0 +1,101 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>静态页面开发</title>
+    <!--  注意项目不能引入第三方链接文件   -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <link href="css/activity.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="container">
+    <form class="activity-form" action="/acitvity/save"  method="post">
+        <h1 class="form-title">团建活动</h1>
+        <div class="item">
+            <span class="required">*</span>
+            <span class="label">活动名称</span>
+            <input type="text" name="activityName" id="activity-name">
+            <span class="warnTip"></span>
+        </div>
+        <div class="item">
+            <span class="required">*</span>
+            <span class="label">活动区域</span>
+            <select name="region" class="activity-area" id="activity-area">
+                <option value="0">北京</option>
+                <option value="1">天津</option>
+                <option value="2">厦门</option>
+                <option value="3">济南</option>
+            </select>
+            <span class="warnTip"></span>
+        </div>
+        <div class="item">
+            <span class="required">*</span>
+            <span class="label">活动时间</span>
+            <input type="date" name="startTime" id="activity-date">
+            <span class="warnTip"></span>
+        </div>
+        <div class="item">
+            <span class="required">*</span>
+            <span class="label">活动天数</span>
+            <input type="number" name="activity-days" id="activity-days">
+            <span class="warnTip"></span>
+        </div>
+        <div class="item">
+            <span class="required">*</span>
+            <span class="label">活动性质</span>
+            <div class="selectContain">
+                <div><input type="checkbox" name="type" class="activity-select" value="1">
+                    <div class="activity-select-name">美食/餐厅线上活动</div>
+                </div>
+
+                <div><input type="checkbox" name="type" class="activity-select" value="2">
+                    <div class="activity-select-name">地摊活动</div>
+                </div>
+
+                <div><input type="checkbox" name="type" class="activity-select" value="3">
+                    <div class="activity-select-name">线下主题活动</div>
+                </div>
+                <div><input type="checkbox" name="type" class="activity-select" value="4">
+                    <div class="activity-select-name">单纯品牌曝光</div>
+                </div>
+            </div>
+            <span class="warnTip"></span>
+        </div>
+        <div class="item">
+            <span class="required">*</span>
+            <span class="label">特殊资源</span>
+            <div class="selectContain">
+                <div>
+                    <input type="radio" name="resource" value="0" class="activity-select">
+                    <div class="activity-select-name">线上品牌商赞助</div>
+                </div>
+                <div>
+                    <input type="radio" name="resource" value="1" class="activity-select">
+                    <div class="activity-select-name">线下场地免费</div>
+                </div>
+            </div>
+            <span class="warnTip"></span>
+        </div>
+        <div id="activity-shape-items">
+            <div class="item" >
+                <span class="required">*</span>
+                <span class="label">活动形式</span>
+                <div class="activity-shape-contain">
+                    <div class="activity-shape-item">
+                        <textarea name="description[0]"></textarea>
+                        <span class="fa fa-close remove-desc"></span>
+                        <span class="warnTip"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <button type="button" id="createBtn">立即创建</button>
+            <button type="button" id="resetBtn">重置</button>
+            <button type="button" id="addShapeBtn">添加活动形式</button>
+        </div>
+    </form>
+</div>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/activity.js"></script>
+</body>
+</html>
